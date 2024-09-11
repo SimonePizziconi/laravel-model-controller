@@ -21,8 +21,10 @@ class PageController extends Controller
         $series = Serie::all();
         return view('serietv', compact('series'));
     }
-    public function contacts()
+    public function details($id)
     {
-        return view('contacts');
+        $serie = Serie::find($id);
+
+        return view('details', compact('serie'));
     }
 }

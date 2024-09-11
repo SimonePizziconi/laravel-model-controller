@@ -17,5 +17,5 @@ use App\Http\Controllers\PageController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
-Route::get('/serie-tv', [PageController::class, 'serieTv'])->name('serietv');
-Route::get('/contatti', [PageController::class, 'contacts'])->name('contacts');
+Route::get('/Serie-tv', [PageController::class, 'serieTv'])->name('serietv');
+Route::get('/Dettagli/{id}', [PageController::class, 'details'])->name('details');

@@ -9,7 +9,6 @@
             <div class="navbar-nav">
                 <a class="nav-link" href="{{ route('home') }}">Film</a>
                 <a class="nav-link" href="{{ route('serietv') }}">Serie Tv</a>
-                <a class="nav-link" href="{{ route('contacts') }}">Contatti</a>
             </div>
         </div>
     </div>
