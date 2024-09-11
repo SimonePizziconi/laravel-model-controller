@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="container my-5">
-        <h1>Home</h1>
+        <h1>Film</h1>
         <div class="container my-5 d-flex flex-wrap gap-3">
             @foreach ($movies as $movie)
                 <div class="card" style="width: 18rem;">
@@ -22,5 +22,5 @@
 
 
 @section('titlePage')
-    home
+    Film
 @endsection

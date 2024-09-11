@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Movie;
 
+use App\Models\Serie;
+
 class PageController extends Controller
 {
     public function index()
@@ -14,9 +16,10 @@ class PageController extends Controller
 
         return view('home', compact('movies'));
     }
-    public function about()
+    public function serieTv()
     {
-        return view('about');
+        $series = Serie::all();
+        return view('serietv', compact('series'));
     }
     public function contacts()
     {
